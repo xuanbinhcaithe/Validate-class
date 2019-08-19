@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Validate class</title>
+</head>
+<body>
+    <script>
+        patt =/^[CPA]{1}\d{4}[GHIKLM]$/;
+        function check(str) {
+            if (patt.test(str)) {
+                console.log("true");
+            } else {
+                console.log("false");
+            }
+        }
+        let c='C0318G';
+        let c1='A1234K';
+        let a='A1234sssH';
+        let a1='P45671235M';
+        check(c1);
+        check(c);
+        check(a);
+        check(a1);
+        let b="M0318G";
+        check(b);
+        let d='P0323A';
+        check(d);
+    </script>
+</body>
+</html>
